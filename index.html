@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>E-Commerce Application</h1>
+        <a href="cart.html" class="cart-link">Go to Cart (<span id="cart-count">0</span>)</a>
+    </header>
+    
+    <main>
+        <section id="products">
+            <div class="product">
+                <img src="product 1.jpg" alt="Product 1">
+                <h3>Chopper</h3>
+                <p> RS.1000.00</p>
+                <button onclick="addToCart('Product 1', 1000.00)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="product 2.jpg" alt="Product 2">
+                <h3>Smart Watch</h3>
+                <p> RS.15000.00</p>
+                <button onclick="addToCart('Product 2', 15000.00)">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; E-Commerce App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
